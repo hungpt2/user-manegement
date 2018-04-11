@@ -1,0 +1,43 @@
+<div class="app flex-row align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card mx-4">
+            <div class="card-body p-4" ng-controller="dashboardCtrl">
+              <h1>Profile</h1>
+              <p class="text-muted">Edit your account</p>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" ng-model="user" ng-class="userErr?'warning':''">
+              </div>
+  
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="FirstName" ng-model="firstName" ng-class="firstNameErr?'warning':''">
+              </div>
+  
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Lastname" ng-model="lastName" ng-class="lastNameErr?'warning':''">
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" ng-model="email" ng-class="emailErr?'warning':''">
+              </div>
+
+              <button type="button" class="btn btn-block btn-success" ng-click="doEdit()">Edit Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
